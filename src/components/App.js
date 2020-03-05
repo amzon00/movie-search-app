@@ -3,6 +3,7 @@ import "../App.css";
 import Header from "./Header";
 import Movie from "./Movie";
 import Search from "./Search";
+import Footer from "./Footer";
 
 
 const MOVIE_API_URL = "https://www.omdbapi.com/?s=war&apikey=4a3b711b";
@@ -83,10 +84,12 @@ const App = () => {
 
     return (
     <div className="App">
-      <Header text="Movie Library" />
+      <Header text="Movie Library"/>
       <Search search={search} />
 
-      <p className="App-intro">The movie search engine you need!</p>
+      <p className="App-intro">
+        <h2>The movie search engine you need!</h2>
+      </p>
       <div className="movies">
         {loading && !errorMessage ? (
           <span>loading... </span>
@@ -98,6 +101,8 @@ const App = () => {
           ))
         )}
       </div>
+      
+      <Footer text='Copyright © 2019 - 2025' />
     </div>
   );
 };
