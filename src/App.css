@@ -3,7 +3,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #4095c6;
   height: 70px;
   display: flex;
   flex-direction: column;
@@ -12,6 +12,19 @@
   font-size: calc(10px + 2vmin);
   color: white;
   padding: 20px;
+  cursor: pointer;
+}
+
+.App-footer {
+  background-color: #4095c6;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding: 48px;
   cursor: pointer;
 }
 
@@ -32,6 +45,8 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .App-header h2 {
@@ -65,18 +80,22 @@
 }
 
 input[type="submit"] {
-  padding: 5px;
-  background-color: transparent;
-  color: black;
-  border: 1px solid black;
-  width: 80px;
-  margin-left: 5px;
-  cursor: pointer;
+  display: inline-block;
+  padding: 0.7em 1.1em;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 2em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #FFFFFF;
+  background-color: silver;
+  text-align: center;
+  transition: all 0.2s;
 }
 
 input[type="submit"]:hover {
-  background-color: #282c34;
-  color: antiquewhite;
+  background-color: #4095c6;
 }
 
 .search>input[type="text"] {
@@ -95,4 +114,39 @@ input[type="submit"]:hover {
     max-width: 100%;
     margin: auto;
   }
+}
+
+.Home-btn {
+  display: inline-block;
+  padding: 0.7em 1.7em;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 2em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #FFFFFF;
+  background-color: silver;
+  text-align: center;
+  transition: all 0.2s;
+}
+
+.Home-btn:hover {
+  background-color: #4095c6;
+}
+
+@media all and (max-width:30em) {
+  .Home-btn {
+    display: block;
+    margin: 0.2em center;
+  }
+}
+
+.form-HomeBtn {
+  padding: 20px;
+  margin: -40px auto;
+  margin-left: 20px;
+  position: relative;
+  top: -24px;
+  left: -10px;
 }
