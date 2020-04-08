@@ -46,7 +46,7 @@
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .App-header h2 {
@@ -149,4 +149,33 @@ input[type="submit"]:hover {
   position: relative;
   top: -24px;
   left: -10px;
+}
+
+button {
+  display: inline-block;
+  padding: 0.7em 1.1em;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 2em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #FFFFFF;
+  background-color: silver;
+  text-align: center;
+  transition: all 0.2s;
+}
+
+button {
+  background-color: #4095c6;
+}
+
+button:focus {
+  outline: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  
 }
